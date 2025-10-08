@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard Project</title>
+</head>
+<body>
+    <aside>
+        <div class="title-container flex-row">
+            <img src="icons/dashboard.svg" alt="Dashboard icon" class="icon icon-large">
+            <h2 class="title">Dashboard</h2>
+        </div>
+        <nav>
+            <ul class="main-navigation">
+                <li>
+                    <a class="aside-link" href="#Home">
+                        <div class="flex-row">
+                            <img src="icons/home.svg" alt="Home icon" class="icon icon-medium">
+                            <h3 class="nav-title">Home</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Profile">
+                        <div class="flex-row">
+                            <img src="icons/profile.svg" alt="Profile icon" class="icon icon-medium">
+                            <h3 class="nav-title">Profile</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Messages">
+                        <div class="flex-row">
+                            <img src="icons/messages.svg" alt="Messages icon" class="icon icon-medium">
+                            <h3 class="nav-title">Messages</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#History">
+                        <div class="flex-row">
+                            <img src="icons/clock.svg" alt="History icon" class="icon icon-medium">
+                            <h3 class="nav-title">History</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Tasks">
+                        <div class="flex-row">
+                            <img src="icons/files.svg" alt="Tasks icon" class="icon icon-medium">
+                            <h3 class="nav-title">Tasks</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Communities">
+                        <div class="flex-row">
+                            <img src="icons/group.svg" alt="Communities icon" class="icon icon-medium">
+                            <h3 class="nav-title">Communities</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="user-settings">
+                <li>
+                    <a class="aside-link" href="#Settings">
+                        <div class="flex-row">
+                            <img src="icons/cog.svg" alt="Settings icon" class="icon icon-medium">
+                            <h3 class="nav-title">Settings</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Support">
+                        <div class="flex-row">
+                            <img src="icons/help-box.svg" alt="Support icon" class="icon icon-medium">
+                            <h3 class="nav-title">Support</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="aside-link" href="#Privacy">
+                        <div class="flex-row">
+                            <img src="icons/shield-check.svg" alt="Privacy icon" class="icon icon-medium">
+                            <h3 class="nav-title">Privacy</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <header>
+        <form action="get" class="search-form flex-row">
+            <button class="button-search-form"><img src="icons/magnify.svg" alt="Search icon" class="icon icon-search"></button>
+            <input type="text" placeholder="" class="search-bar">
+        </form>
+        </div>
+        <div class="flex-row user-info">
+            <img src="icons/bell-ring-outline.svg" alt="" class="icon">
+            <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
+            <h4 class="username">Ignacio Chavez</h4>
+        </div>
+        <div class="flex-row user-greeting">
+            <img src="imgs/profile-pic.jpg" alt="Profile picture" class="profile-pic profile-pic-large">
+            <div class="flex-column">
+                <p class="greeting">Hi there,</p>
+                <h3 class="username-big">Ignacio Chavez (@nigger)</h3>
+            </div>
+        </div>
+        <div class="flex-row user-actions">
+            <button class="new-button">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-projects">
+            <h4 class="subtitle">Your Projects</h4>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </div>
+        <div class="announcements">
+            <h4 class="subtitle">Announcements</h4>
+            <div class="announcement"></div>
+            <div class="announcement"></div>
+            <div class="announcement"></div>
+        </div>
+        <div class="trendings">
+            <h4 class="subtitle">Trending</h4>
+            <div class="trends"></div>
+            <div class="trends"></div>
+            <div class="trends"></div>
+            <div class="trends"></div>
+        </div>
+    </main>
+</body>
+</html>
