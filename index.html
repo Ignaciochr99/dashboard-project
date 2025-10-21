@@ -1,259 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Dashboard Project</title>
 </head>
-<body>
-    <aside>
-        <div class="title-container flex-row">
-            <img src="icons/dashboard.svg" alt="Dashboard icon" class="icon icon-large">
-            <h2 class="title">Dashboard</h2>
-        </div>
-        <nav>
-            <ul class="main-navigation">
-                <li>
-                    <a class="aside-link" href="#Home">
-                        <div class="flex-row">
-                            <img src="icons/home.svg" alt="Home icon" class="icon icon-medium">
-                            <h3 class="nav-title">Home</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Profile">
-                        <div class="flex-row">
-                            <img src="icons/profile.svg" alt="Profile icon" class="icon icon-medium">
-                            <h3 class="nav-title">Profile</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Messages">
-                        <div class="flex-row">
-                            <img src="icons/messages.svg" alt="Messages icon" class="icon icon-medium">
-                            <h3 class="nav-title">Messages</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#History">
-                        <div class="flex-row">
-                            <img src="icons/clock.svg" alt="History icon" class="icon icon-medium">
-                            <h3 class="nav-title">History</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Tasks">
-                        <div class="flex-row">
-                            <img src="icons/files.svg" alt="Tasks icon" class="icon icon-medium">
-                            <h3 class="nav-title">Tasks</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Communities">
-                        <div class="flex-row">
-                            <img src="icons/group.svg" alt="Communities icon" class="icon icon-medium">
-                            <h3 class="nav-title">Communities</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="user-settings">
-                <li>
-                    <a class="aside-link" href="#Settings">
-                        <div class="flex-row">
-                            <img src="icons/cog.svg" alt="Settings icon" class="icon icon-medium">
-                            <h3 class="nav-title">Settings</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Support">
-                        <div class="flex-row">
-                            <img src="icons/help-box.svg" alt="Support icon" class="icon icon-medium">
-                            <h3 class="nav-title">Support</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="aside-link" href="#Privacy">
-                        <div class="flex-row">
-                            <img src="icons/shield-check.svg" alt="Privacy icon" class="icon icon-medium">
-                            <h3 class="nav-title">Privacy</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-    <header>
-        <form action="get" class="search-form flex-row">
-            <button class="button-search-form"><img src="icons/magnify.svg" alt="Search icon" class="icon icon-search"></button>
-            <input type="text" placeholder="" class="search-bar">
-        </form>
-        </div>
-        <div class="flex-row user-info">
-            <img src="icons/bell-ring-outline.svg" alt="" class="icon">
-            <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
-            <h4 class="username">Ignacio Chavez</h4>
-        </div>
-        <div class="flex-row user-greeting">
-            <img src="imgs/profile-pic.jpg" alt="Profile picture" class="profile-pic profile-pic-large">
-            <div class="flex-column">
-                <p class="greeting">Hi there,</p>
-                <h3 class="username-big">Ignacio Chavez (@nigger)</h3>
-            </div>
-        </div>
-        <div class="flex-row user-actions">
-            <button class="new-button">New</button>
-            <button class="upload">Upload</button>
-            <button class="share">Share</button>
-        </div>
-    </header>
-    <main>
-        <div class="main-projects">
-            <h3 class="subtitle">Your Projects</h4>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-container">
-                    <h4 class="project-title">
-                        Project 1
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti sed esse ipsum excepturi mollitia hic at architecto ullam molestias alias quam, porro molestiae eos, maxime adipisci incidunt aliquid quibusdam.</p>
-                    <div class="icon-container-projects">
-                        <img src="icons/star-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/eye-plus-outline.svg" alt="Home icon" class="icon icon-small">
-                        <img src="icons/source-fork.svg" alt="Home icon" class="icon icon-small">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="announcements">
-            <h4 class="subtitle">Announcements</h4>
-            <div class="announcements-container">
-            <div class="announcement-subcontainer">
-                <h4 class="announcement-title">Announcement 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt numquam illum vel sed debitis delectus aperiam corporis dolor. Suscipit facere quibusdam porro omnis dolor libero, ipsa pariatur minus doloribus distinctio!</p>
-            </div>
-            <div class="announcement-subcontainer">
-                <h4 class="announcement-title">Announcement 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt numquam illum vel sed debitis delectus aperiam corporis dolor. Suscipit facere quibusdam porro omnis dolor libero, ipsa pariatur minus doloribus distinctio!</p>
-            </div>
-            <div class="announcement-subcontainer">
-                <h4 class="announcement-title">Announcement 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt numquam illum vel sed debitis delectus aperiam corporis dolor. Suscipit facere quibusdam porro omnis dolor libero, ipsa pariatur minus doloribus distinctio!</p>
-            </div>
-            </div>
 
-        </div>
-        <div class="trendings">
-            <h4 class="subtitle">Trending</h4>
-            <div class="trending-group">
-                            <div class="trends flex-row">
-                <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
-                <div class="trending-username-group">
-                    <p class="trending-username">@username_1</p>
-                    <p class="trending-project">Project 1</p>
+<body>
+    <div class="dashboard-container">
+        <section class="navbar-container">
+            <div class="dashboard-title-container flex-row">
+                <svg class="dashboard-icon icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>currency-usd</title>
+                    <path
+                        d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z" />
+                </svg>
+                <h1 class="dashboard-title">
+                    My Networth
+                </h1>
+            </div>
+            <ul class="dashboard-bullets main-list">
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>home</title>
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                    </svg>
+                    <p>Home</p>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>chart-areaspline</title>
+                        <path
+                            d="M17.45,15.18L22,7.31V19L22,21H2V3H4V15.54L9.5,6L16,9.78L20.24,2.45L21.97,3.45L16.74,12.5L10.23,8.75L4.31,19H6.57L10.96,11.44L17.45,15.18Z" />
+                    </svg>
+                    <p>My Projections</p>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>bullseye-arrow</title>
+                        <path
+                            d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z" />
+                    </svg>
+                    <P>FIRE Progress</P>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>bank-transfer</title>
+                        <path
+                            d="M15,14V11H18V9L22,12.5L18,16V14H15M14,7.7V9H2V7.7L8,4L14,7.7M7,10H9V15H7V10M3,10H5V15H3V10M13,10V12.5L11,14.3V10H13M9.1,16L8.5,16.5L10.2,18H2V16H9.1M17,15V18H14V20L10,16.5L14,13V15H17Z" />
+                    </svg>
+                    <p>Transactions</p>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>alien</title>
+                        <path
+                            d="M12,3C16.97,3 21,6.58 21,11C21,15.42 15,21 12,21C9,21 3,15.42 3,11C3,6.58 7.03,3 12,3M10.31,10.93C9.29,9.29 7.47,8.58 6.25,9.34C5.03,10.1 4.87,12.05 5.89,13.69C6.92,15.33 8.74,16.04 9.96,15.28C11.18,14.5 11.33,12.57 10.31,10.93M13.69,10.93C12.67,12.57 12.82,14.5 14.04,15.28C15.26,16.04 17.08,15.33 18.11,13.69C19.13,12.05 18.97,10.1 17.75,9.34C16.53,8.58 14.71,9.29 13.69,10.93M12,17.75C10,17.75 9.5,17 9.5,17C9.5,17.03 10,19 12,19C14,19 14.5,17 14.5,17C14.5,17 14,17.75 12,17.75Z" />
+                    </svg>
+                    <p>Goonin</p>
+                </li>
+            </ul>
+            <ul class="dashboard-bullets config-list">
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>cog</title>
+                        <path
+                            d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                    </svg>
+                    <p>Settings</p>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>help</title>
+                        <path
+                            d="M10,19H13V22H10V19M12,2C17.35,2.22 19.68,7.62 16.5,11.67C15.67,12.67 14.33,13.33 13.67,14.17C13,15 13,16 13,17H10C10,15.33 10,13.92 10.67,12.92C11.33,11.92 12.67,11.33 13.5,10.67C15.92,8.43 15.32,5.26 12,5A3,3 0 0,0 9,8H6A6,6 0 0,1 12,2Z" />
+                    </svg>
+                    <p>Need Help?</p>
+                </li>
+                <li class="list-item flex-row">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>download</title>
+                        <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+                    </svg>
+                    <p>Export Data</p>
+                </li>
+            </ul>
+        </section>
+        <section class="header-container">
+            <div class="search-bar-group flex-row">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>magnify</title>
+                    <path
+                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                </svg>
+                <form action="post" class="search-bar">
+                    <input class="search-bar" type="text">
+                </form>
+            </div>
+            <div class="user-profile flex-row">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>bell-ring-outline</title>
+                    <path
+                        d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+                </svg>
+                <img src="https://images.unsplash.com/photo-1759197318767-45052fdf4668?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764"
+                    alt="" class="profile-pic-small img">
+
+                <h3 class="profile-title">
+                    Ignacio Chavez
+                </h3>
+
+            </div>
+            <div class="user-greeting flex-row">
+                <img src="https://images.unsplash.com/photo-1759197318767-45052fdf4668?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764"
+                    alt="" class="profile-pic-big img">
+                <div class="greeting-group">
+                    <p>Hi there,</p>
+                    <h3 class="greeting-title">
+                        Ignacio Chavez (@IChavez)
+                    </h3>
                 </div>
             </div>
-            <div class="trends flex-row">
-                <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
-                <div class="trending-username-group">
-                    <p class="trending-username">@username_1</p>
-                    <p class="trending-project">Project 1</p>
+            <div class="button-center flex-row">
+                <button>New</button>
+                <button>Favorites</button>
+                <button>Share</button>
+            </div>
+        </section>
+        <section class="main-container">
+            <div class="projects-container">
+                <h2 class="projects-title title">Your Stocks</h2>
+                <div class="stocks-group">
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stock-container">
+                        <h4 class="stock-title">
+                            TQQQ
+                        </h4>
+                        <p>TQQQ is king! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, sint eum
+                            aliquam tenetur voluptas doloribus iure voluptatibus consequuntur expedita</p>
+                        <div class="action-button-group">
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>plus</title>
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>minus-thick</title>
+                                <path d="M20 14H4V10H20" />
+                            </svg>
+                            <svg class="stock-action icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>drag-horizontal-variant</title>
+                                <path d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="trends flex-row">
-                <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
-                <div class="trending-username-group">
-                    <p class="trending-username">@username_1</p>
-                    <p class="trending-project">Project 1</p>
+            <div class="announcements-container">
+                <h3 class="announcements-title title">Announcements</h4>
+                    <div class="announcement-super-group">
+                        <div class="announcements-group">
+                            <div class="announcement">
+                                <h4 class="ann-title">BYND is going bonkers!</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae assumenda sint
+                                    aliquid cupiditate id saep</p>
+                            </div>
+                        </div>
+                        <div class="announcements-group">
+                            <div class="announcement">
+                                <h4 class="ann-title">BYND is going bonkers!</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae assumenda sint
+                                    aliquid cupiditate id saep</p>
+                            </div>
+                        </div>
+                        <div class="announcements-group">
+                            <div class="announcement">
+                                <h4 class="ann-title">BYND is going bonkers!</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae assumenda sint
+                                    aliquid cupiditate id saep</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="trending-container">
+                <h3 class="trending-title title">New Stocks</h3>
+                <div class="trending-super-group">
+                    <div class="trending-group flex-row">
+                        <img class="profile-pic-small img"
+                            src="https://plus.unsplash.com/premium_photo-1679830513873-5f9163fcc04a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627"
+                            alt="">
+                        <div class="trending-text-group">
+                            <h4 class="trend-title">@OFWGKTA</h4>
+                            <p>hola hola hoal</p>
+                        </div>
+                    </div>
+                    <div class="trending-group flex-row">
+                        <img class="profile-pic-small img"
+                            src="https://plus.unsplash.com/premium_photo-1679830513873-5f9163fcc04a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627"
+                            alt="">
+                        <div class="trending-text-group">
+                            <h4 class="trend-title">@OFWGKTA</h4>
+                            <p>hola hola hoal</p>
+                        </div>
+                    </div>
+                    <div class="trending-group flex-row">
+                        <img class="profile-pic-small img"
+                            src="https://plus.unsplash.com/premium_photo-1679830513873-5f9163fcc04a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627"
+                            alt="">
+                        <div class="trending-text-group">
+                            <h4 class="trend-title">@OFWGKTA</h4>
+                            <p>hola hola hoal</p>
+                        </div>
+                    </div>
+                    <div class="trending-group flex-row">
+                        <img class="profile-pic-small img"
+                            src="https://plus.unsplash.com/premium_photo-1679830513873-5f9163fcc04a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627"
+                            alt="">
+                        <div class="trending-text-group">
+                            <h4 class="trend-title">@OFWGKTA</h4>
+                            <p>hola hola hoal</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="trends flex-row">
-                <img src="imgs/profile-pic.jpg" alt="profile picture" class="profile-pic">
-                <div class="trending-username-group">
-                    <p class="trending-username">@username_1</p>
-                    <p class="trending-project">Project 1</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </main>
+        </section>
+    </div>
 </body>
+
 </html>

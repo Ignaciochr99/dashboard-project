@@ -1,264 +1,279 @@
-/* ################################### GENERAL STYLES ################################### */
-::before,::after,html {
-    box-sizing: border-box;
+html {
+    font-family: monospace;
 }
 
-/* ################################### BODY ################################### */
-
-body {
-    font-family: 'Alan Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d6d6d6;
-    display: grid;
-    grid-template-areas:
-        "sidebar header"
-        "sidebar main"
-        "sidebar main"
-        "sidebar main";
-    grid-template-columns: 1fr 4fr;
-}
-aside{
-    background-color: #b7b7b7
+.icon {
+    width: 1.3rem;
+    padding: 0.1rem;
+    border-radius: 50%;
 }
 
-aside,header,main{
-    padding: 1rem;
-}
-
-.flex-row{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.icon{
-    font-size: 0.5rem;
-    font-weight: 100;
-    width: 1rem;
-}
-.profile-pic{
-    width: 3rem;
-    height: 3rem;
+.img {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.1rem;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
 }
 
-/* ################################### ASIDE ################################### */
-aside{
-    grid-area: sidebar;
+
+.flex-row {
+    display: flex;
+    position: relative;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav main main"
+        "nav main main";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.header-container p,
+.mian-container p {
+    color: rgb(94, 94, 94);
+}
+
+/*########################### NAVBAR ###########################*/
+.navbar-container {
+    grid-area: nav;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap:3rem;
-    z-index: 2;
-}
-aside .flex-row{
-    position: relative;
-    margin-left: 2.5rem;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    justify-items: center;
+    z-index: 100;
+    box-shadow: 0.5px 1.5px 1px rgb(116, 116, 116);
 }
 
-.aside-link{
-    text-decoration: none;
-    color:inherit
+.navbar-container .icon,
+.search-bar-group .icon {
+    position: absolute;
+    left: -1.5rem;
 }
-.aside-link:hover{
-    color: rgb(115, 16, 145);
-    border-radius: 0.5rem;
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
-aside .icon{
-    position:absolute;
+
+.dashboard-title-container {
+    align-items: center;
+}
+
+.navbar-container .dashboard-icon {
+    width: 2rem;
     left: -2rem;
 }
 
-aside .icon-large{
-    width: 2rem;
-    left: -2.5rem;
-}
-.title{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-aside ul{
+.main-list,
+.config-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
-/* ################################### HEADER ################################### */
-header{
+
+.list-item {
+    align-items: center;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.list-item:hover {
+    cursor: pointer;
+    transform: translateX(1rem);
+    color: greenyellow;
+    fill: greenyellow;
+}
+
+.list-item:active {
+    color: green;
+    fill: green;
+}
+
+/*########################### NAVBAR ###########################*/
+.header-container {
+    padding: 1rem 5rem 1rem 2.5rem;
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    column-gap: 1rem;
-    padding-left: 2rem;
-    background-color: white;
-    z-index: 1;
-    box-shadow: 2px 3px 4px rgb(155, 155, 155);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: -1;
+    box-shadow: 0.5px 1.5px 1px rgb(116, 116, 116);
 }
 
-.user-actions button{
-    font-size: 0.85rem;
-    background: none;
-    border: 2px solid white;
-    border-radius: 1rem;
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    font-weight: 700;
-    transition: 0.3s;
-    box-shadow: 1px 1px 4px rgb(155, 155, 155);
+.search-bar-group {
+    align-items: center;
 }
-.user-actions button:hover{
-    background-color: rgb(115, 16, 145);
+
+.search-bar {
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.search-bar:hover,
+.search-bar:focus,
+.search-bar:active,
+.search-bar:focus-visible {
+    border: 1px solid transparent;
+    border-color: green;
+    background-color: green;
     color: white;
-    border: 2px solid rgb(115, 16, 145);
 }
-.search-form button{
+
+
+.search-icon {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.user-profile,
+.button-center {
+    justify-content: end;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.user-profile {
+    padding-right: 1rem;
+}
+
+.user-profile,
+.user-greeting {
+    align-items: center;
+}
+
+.user-greeting {
+    gap: 1rem;
+}
+
+.button-center button {
+    font-family: inherit;
+    font-size: 0.9rem;
     background: none;
     border: none;
-    cursor: pointer;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0.5px 1.5px 3px black;
+    transition: 0.2s;
 }
-.user-info, .user-actions{
-    gap:2rem;
-    justify-content: end;
+
+.button-center button:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+.button-center button:active {
+    background-color: green;
+}
+
+.button-center {
+    align-items: center;
+}
+
+.profile-pic {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.profile-pic-big {
+    width: 5rem;
+    height: 5rem;
+}
+
+.greeting-title {
+    font-size: 1.5rem;
     font-weight: 700;
-    padding-right: 4rem;
 }
 
-.search-bar{
-    background-color: #d6d6d6;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 70%;
-    outline: none;
-    border: 2px solid transparent
-}
-.search-bar:focus{
-    border: 2px solid rgb(115, 16, 145);
-}
-
-.icon-search{
-    width: 1.5rem;
+/*########################### MAIN ###########################*/
+.main-container {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "stocks announcements"
+        "stocks trending";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content;
+    padding: 1rem 1.5rem;
+    column-gap: 2rem;
 }
 
+.projects-container {
+    grid-area: stocks;
 
-.profile-pic-large{
-    width: 4rem;
-    height: 4rem;
 }
 
-.username-big{
+.stocks-group {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.stock-container,
+.announcement-super-group,
+.trending-super-group {
+    box-shadow: 0.5px 1.5px 1px rgb(116, 116, 116);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.announcement-super-group {
+    padding: 2rem 2.5rem;
+}
+
+.announcements-container {
+    grid-area: announcements;
+
+}
+
+.announcements-group:not(:last-child) {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trending-container {
+    grid-area: trending;
+}
+
+.title {
     font-weight: 700;
     font-size: 1.5rem;
 }
 
-/* ################################### MAIN ################################### */
-main{
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 4fr 4fr 3fr;
-    gap: 1rem;
-    grid-template-areas:
-    "projects projects announcements"
-    "projects projects trending";
-    background-color: white;
-}
-
-.main-projects{
-    grid-area: projects;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content;
-    gap: 1rem;
-}
-.subtitle{
+.ann-title,
+.stock-title {
     font-weight: 700;
     font-size: 1.2rem;
 }
-.main-projects .subtitle{
-    grid-column: span 2;
-}
 
-.project-container{
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
-    padding: 2rem;
-    border-left: 10px solid rgb(115, 16, 145);
-    box-shadow: 2px 3px 4px rgb(155, 155, 155);
+.action-button-group {
     display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-}
-.project{
-    min-height: 100%;
-}
-.project-container:hover{
-    transform: scale(1.05);
-
-}
-.project-title, .announcement-title{
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.2rem;
-}
-.project-title+p,.announcement-title+p{
-    font-size: 0.7rem;
-    color:rgb(75, 75, 75)
+    justify-content: end;
+    gap: .5rem;
 }
 
-.announcements{
-    grid-area:announcements;
-    display: flex;
-    flex-direction: column;
+.trending-container {
+    padding-top: 1rem;
+}
+
+.trending-group {
+    align-items: center;
     gap: 1rem;
-
 }
-.announcements-container, .trending-group{
-    box-shadow: 2px 3px 4px rgb(155, 155, 155);
-    border-radius: 10px;
+
+.trending-super-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
     padding: 1rem 2rem;
-}
-.announcement-subcontainer{
-    border-bottom: 1px solid #b7b7b7;
-    padding: 1rem 0;
-}
-.announcement-subcontainer:last-child{
-    border:none;
-}
-.announcement-title{
-    font-size: 0.7rem;;
-}
-.announcement-title+p{
-    font-size: 0.55rem;
-}
-.announcement-subcontainer p{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-height: 1.75rem;
-}
-
-.trendings{
-    grid-area:trending;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-}
-.trending-username{
-    font-weight: 700;
-    font-size: 0.7rem;
-}
-.trending-project{
-    font-size: 0.65rem;
-}
-.trending-group{
-    padding-left: 0.5rem;
 }
